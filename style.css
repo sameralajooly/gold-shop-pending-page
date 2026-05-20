@@ -1,0 +1,48 @@
+.coming-soon-container {
+  background-image:
+    linear-gradient(rgba(7, 7, 7, 0.72), rgba(7, 7, 7, 0.72)),
+    url("background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.font-playfair {
+  font-family: "Playfair Display", serif;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo-wrapper img {
+  width: 100%;
+  height: auto;
+  max-width: 360px;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.35));
+}
+
+.countdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.countdown-item {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 28px;
+  padding: 1.25rem 1.5rem;
+  min-width: 5.5rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #090909;
+}

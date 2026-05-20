@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#090909" />
+    <title>Floraza - Coming Soon</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="min-h-screen bg-black text-white">
+    <div class="coming-soon-container relative w-full h-screen overflow-hidden">
+      <!-- Background image will be set via CSS -->
+      <div
+        class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center px-4 text-center"
+      >
+        <div class="max-w-4xl">
+          <div class="logo-wrapper flex flex-col items-center mb-8">
+            <img
+              src="./logo-with-name.png"
+              alt="Floraza logo and name"
+              class="w-full max-w-xs sm:max-w-sm"
+            />
+            <p
+              class="mt-4 text-sm uppercase tracking-[0.45em] text-yellow-300 font-semibold font-montserrat"
+            >
+              Exquisite gold jewelry crafted to perfection
+            </p>
+          </div>
+          <p
+            class="text-lg md:text-xl mb-10 text-yellow-100 font-montserrat leading-relaxed"
+          >
+            A luxury brand inspired by timeless elegance, launching shortly.
+          </p>
+
+          <div class="countdown-container mb-12">
+            <p class="text-lg mb-4 font-montserrat">
+              Our collection will be revealed in
+            </p>
+            <div class="flex justify-center space-x-4 md:space-x-8">
+              <div class="countdown-item">
+                <div
+                  class="text-4xl md:text-6xl font-bold font-playfair"
+                  id="days"
+                >
+                  00
+                </div>
+                <div class="text-sm uppercase tracking-wider">Days</div>
+              </div>
+              <div class="countdown-item">
+                <div
+                  class="text-4xl md:text-6xl font-bold font-playfair"
+                  id="hours"
+                >
+                  00
+                </div>
+                <div class="text-sm uppercase tracking-wider">Hours</div>
+              </div>
+              <div class="countdown-item">
+                <div
+                  class="text-4xl md:text-6xl font-bold font-playfair"
+                  id="minutes"
+                >
+                  00
+                </div>
+                <div class="text-sm uppercase tracking-wider">Minutes</div>
+              </div>
+              <div class="countdown-item">
+                <div
+                  class="text-4xl md:text-6xl font-bold font-playfair"
+                  id="seconds"
+                >
+                  00
+                </div>
+                <div class="text-sm uppercase tracking-wider">Seconds</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <form class="newsletter-form max-w-md mx-auto" id="newsletter-form">
+            <p class="mb-4 font-montserrat">
+              Be the first to know when we launch
+            </p>
+            <div class="flex">
+              <input
+                type="email"
+                name="email"
+                id="email-input"
+                placeholder="Your email address"
+                class="flex-grow px-4 py-3 rounded-l text-gray-900 focus:outline-none"
+                required
+              />
+              <button
+                type="submit"
+                class="bg-yellow-600 hover:bg-yellow-700 px-6 py-3 rounded-r font-medium transition-colors"
+              >
+                Notify Me
+              </button>
+            </div>
+          </form> -->
+
+          <!-- <div class="social-links mt-12 flex justify-center space-x-6">
+                    <a href="#" class="hover:text-yellow-400 transition-colors"><i data-feather="instagram"></i></a>
+                    <a href="#" class="hover:text-yellow-400 transition-colors"><i data-feather="facebook"></i></a>
+                    <a href="#" class="hover:text-yellow-400 transition-colors"><i data-feather="twitter"></i></a>
+                    <a href="#" class="hover:text-yellow-400 transition-colors"><i data-feather="mail"></i></a>
+                </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div
+      id="success-modal"
+      class="fixed inset-0 z-50 flex items-center justify-center hidden p-4"
+    >
+      <div
+        class="absolute inset-0 bg-black bg-opacity-75 backdrop-blur-sm"
+      ></div>
+      <div
+        class="relative bg-white text-gray-900 max-w-sm w-full rounded-2xl p-8 text-center shadow-2xl transform transition-all"
+      >
+        <div
+          class="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6"
+        >
+          <i data-feather="check" class="w-12 h-12"></i>
+        </div>
+        <h3 class="text-2xl font-bold font-playfair mb-2">
+          You're on the list!
+        </h3>
+        <p class="text-gray-600 font-montserrat mb-8">
+          Thank you for your interest. We'll notify you as soon as Floraza
+          launches.
+        </p>
+        <button
+          id="close-modal"
+          class="w-full bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 rounded-lg transition-colors"
+        >
+          Awesome
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
